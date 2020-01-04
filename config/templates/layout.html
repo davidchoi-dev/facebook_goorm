@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <ul>
+            <li><a href="{% url 'post:post_list' %}">post</a></li>
+            <li><a href="{% url 'bookmarks:bookmarks_list' %}">bookmark</a></li>
+            <li><a href="{% url 'friends:friends_list' %}">friends</a></li>
+            <li><a href="{% url 'chat:chat_list' %}">chat</a></li>
+        </ul>
+        
+        
+        {% block head %}
+        {% endblock %}
+
+        {% block contents %}
+        {% endblock %}
+    </body>    
+</html>
